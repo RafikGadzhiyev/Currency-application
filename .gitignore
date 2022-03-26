@@ -11,6 +11,9 @@
 # production
 /build
 
+# todo 
+TODO.todo
+
 # misc
 .DS_Store
 .env.local

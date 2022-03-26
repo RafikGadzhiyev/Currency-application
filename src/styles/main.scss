@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F3F7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: inherit;
+}
+
+.main-container {
+    background-color: #F2F3F7;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.main-header {
+    h1 {
+        margin-block: 10px 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+        gap: 10px;
+    }
+
+}
+
+
+.currency {
+    width: 20%;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #E1E3F2;
+    transition: 300ms ease;
+
+    &:hover {
+        background-color: #E1E3Ff;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 25%;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 35%;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 48%;
+    }
+
+}
+
+.currency-open_button {
+    all: unset;
+    display: flex;
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    padding: 10px;
+    box-sizing: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    font-size: 20px;
+
+    @media screen and (max-width: 1300px) {
+        font-size: initial;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 13px;
+    }
+
+}
+
+.less {
+    color: red;
+}
+
+.great {
+    color: green;
+}
+
+.tooltip-container {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+
+    @media screen and (max-width: 1300px) {
+        font-size: initial;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 110px;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+}
+
+.info-container {
+    text-align: center;
+    padding-block: 10px 20px;
+}
+
+.info-title {
+    text-transform: capitalize;
+}
+
+.info-currency_name {
+    font-size: 20px;
+}
+
+.currency_today {
+
+    &:hover {
+        background-color: #E1E3Ff;
+    }
+
+
+    all: unset;
+    width: 50%;
+    margin: 0 10px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #E1E3F2;
+    transition: 300ms ease;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 20px;
+
+    @media screen and (max-width: 1300px) {
+        font-size: initial;
+    }
+
+    @media screen and (max-width: 750px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 13px;
+    }
+
+}
